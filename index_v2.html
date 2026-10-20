@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>École Terre-des-Jeunes — logo animé (version 2, 5 couleurs)</title>
+<style>
+  html, body { margin:0; height:100%; background:var(--fond, #054b3c); overflow:hidden; }
+  svg { display:block; width:100%; height:100%; }
+  #tout path { fill:var(--trait, #ffebd7); }
+</style>
+</head>
+<body>
+<svg viewBox="8516.59 129.39 1253.87 834.23" preserveAspectRatio="xMidYMid meet" aria-label="Logo École Terre-des-Jeunes">
+  <defs>
+    <!-- Tout ce qui est au-dessus du sol (y = 603.47) -->
+    <clipPath id="sol"><rect x="8900" y="300" width="500" height="303.47"/></clipPath>
+    <!-- Tronc + racines : un seul tracé (pas de ligne de jonction). Sous le sol, le masque suit le centre de chaque racine, bouts arrondis -->
+    <mask id="racines" maskUnits="userSpaceOnUse" x="8900" y="300" width="500" height="420">
+      <!-- partie hors-sol du tronc -->
+      <rect x="8900" y="300" width="500" height="303.47" fill="#fff"/>
+      <rect id="racinesPied" x="9138.2" y="599.5" width="10.6" height="0" fill="#fff"/>
+      <g fill="none" stroke="#fff" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+        <path id="racineG" pathLength="1" stroke-dasharray="0 2" d="M9143.52,626.50 L9136.52,625.29 L9133.52,627.12 L9130.52,628.20 L9127.52,628.87 L9124.52,629.19 L9121.52,629.21 L9118.52,628.94 L9115.52,628.38 L9112.52,627.61 L9109.52,626.65 L9106.52,625.55 L9103.52,624.32 L9100.52,622.96 L9097.52,621.54 L9094.52,620.19 L9091.52,618.79 L9088.52,617.48 L9085.52,616.24 L9082.52,615.16 L9079.52,614.30 L9076.52,613.69 L9073.52,613.28 L9070.52,613.10 L9067.52,613.13 L9064.52,613.39 L9061.52,613.87 L9058.52,614.60 L9053.52,618.30 L9048.20,621.83 L9045.82,623.60"/>
+        <path id="racineD" pathLength="1" stroke-dasharray="0 2" d="M9143.50,626.50 L9150.50,625.29 L9153.50,627.12 L9156.50,628.20 L9159.50,628.87 L9162.50,629.19 L9165.50,629.21 L9168.50,628.94 L9171.50,628.38 L9174.50,627.61 L9177.50,626.65 L9180.50,625.55 L9183.50,624.32 L9186.50,622.96 L9189.50,621.54 L9192.50,620.19 L9195.50,618.79 L9198.50,617.48 L9201.50,616.24 L9204.50,615.16 L9207.50,614.30 L9210.50,613.69 L9213.50,613.28 L9216.50,613.10 L9219.50,613.13 L9222.50,613.39 L9225.50,613.87 L9228.50,614.60 L9233.50,618.30 L9238.82,621.83 L9241.20,623.60"/>
+      </g>
+      <!-- une fois formées, les racines sont affichées telles quelles -->
+      <rect id="racinesPleines" x="8900" y="599.5" width="500" height="120" fill="#fff" opacity="0"/>
+    </mask>
+  </defs>
+
+  <g id="tout">
+    <g id="logo">
+      <g clip-path="url(#sol)">
+        
+        <g id="pageG"><path d="M9047.12,603.47h12.08s13.16-23.51-5.5-74.13c.34-.31.35-.31.7-.62,8.22,4.31,16.59,6.4,16.59,6.4v-9.73c-9.45-1.54-20.35-5.91-25.04-14.52l-5.7,5.7c16.25,35.41,20.24,69.49,6.87,86.89h0Z"/></g>
+        <g id="pageD"><path d="M9227.85,603.47h12.08c-13.38-17.41-9.38-51.49,6.87-86.89l-5.7-5.7c-4.69,8.61-15.59,12.98-25.04,14.52v9.73s8.37-2.09,16.59-6.4c.35.31.35.31.7.62-18.66,50.61-5.5,74.12-5.5,74.12h0Z"/></g>
+      </g>
+      <g mask="url(#racines)"><g id="tronc"><path d="M9205.63,610.85c-6.15,1.62-11.75,4.37-17.17,7.02-8.96,4.38-25.23,12.11-36.23,4.31-2.68-1.9-3.9-4.82-3.9-8.66v-83.72c.32-.2.4-.25.72-.45,16.68,8.11,34.15,8.08,34.15,8.08v-9.61c-14.43.09-31.3-3.15-39.68-9.93-8.38,6.77-25.25,10.02-39.68,9.93v9.61s17.48.03,34.15-8.08c.32.2.4.25.72.45v83.72c0,3.84-1.21,6.76-3.9,8.66-11,7.8-27.27.08-36.23-4.31-5.42-2.65-11.02-5.39-17.17-7.02-21.2-5.6-35.89,7.29-35.89,7.29l5.36,7.38s11.16-11.47,28.59-7.34c9.62,2.28,28.9,15.24,43.21,14.8,10.58-.32,17.76-4.09,20.45-7.33h.76c2.68,3.24,9.87,7.01,20.45,7.33,14.32.44,33.59-12.53,43.21-14.8,17.43-4.13,28.59,7.34,28.59,7.34l5.36-7.38s-14.68-12.9-35.89-7.29h0Z"/></g></g>
+      <g id="feuillage"><path d="M9096.74,560.09c9.92,24.53,32.89,14.49,32.89,14.49v-8.81s-4.78,3.44-9.55,3.32c-14.77-.37-15.93-15.4-15.93-15.41,0,0-14.66-.79-15.45-15.86-.5-9.45,10.49-15.58,10.49-15.58,0,0-11.11-6.35-10.49-15.58,1.22-18.29,20.01-15.68,20.01-15.68,0,0-4.44-20.01,15.37-23.28,12.42-2.05,19.46,11.81,19.47,11.82,0,0,7.05-13.87,19.47-11.82,19.81,3.27,15.37,23.28,15.37,23.28,0,0,18.78-2.62,20.01,15.68.62,9.23-10.49,15.58-10.49,15.58,0,0,10.99,6.13,10.49,15.58-.8,15.07-15.45,15.86-15.45,15.86,0,0-1.17,15.04-15.93,15.41-4.77.12-9.55-3.32-9.55-3.32v8.81s22.97,10.03,32.89-14.49c9.81-2.91,16.65-12.05,16.65-22.26,0-5.8-2.15-11.32-6.07-15.58,3.92-4.26,6.07-9.78,6.07-15.58,0-11.33-8.41-21.16-19.59-22.97-1.31-21.53-28.42-31.47-43.84-16.55-15.42-14.91-42.53-4.97-43.84,16.55-11.18,1.81-19.59,11.65-19.59,22.97,0,5.8,2.15,11.32,6.07,15.58-3.92,4.26-6.07,9.79-6.07,15.58,0,10.22,6.84,19.35,16.65,22.26h0Z"/></g>
+    </g>
+    <g transform="translate(-1404.17 0)">
+      <g id="ligne1"><path d="M10470.82,517.89v6.99h-18.52v10.82h17.22v6.73h-17.22v11.2h18.84v6.99h-26.81v-42.74h26.49,0ZM10453.79,510.88l7.51-8.48h8.61l-9.78,8.48h-6.35Z"/>
+<path d="M10492.14,561.28c-9.13,0-16.64-6.15-16.64-16.12,0-9.39,6.6-15.93,16.39-15.93,3.75,0,7.12.97,10.04,2.91v7.77c-2.53-2.72-5.96-4.34-9.65-4.34-5.83,0-9.26,4.14-9.26,9.71s3.69,9.65,9.58,9.65c3.63,0,7.06-1.62,9.58-4.4v7.84c-2.85,1.94-6.41,2.92-10.04,2.92h0Z"/>
+<path d="M10538.69,545.28c0,9.39-6.28,16-15.74,16s-15.8-6.6-15.8-16,6.28-16.06,15.8-16.06,15.74,6.67,15.74,16.06ZM10514.48,545.28c0,5.96,3.3,9.84,8.48,9.84s8.42-3.89,8.42-9.84-3.3-9.84-8.42-9.84-8.48,3.89-8.48,9.84h0Z"/>
+<path d="M10544.63,560.63v-30.76c0-3.5-.26-7.58-.65-11.98h8.09v33.48c0,3.17.32,6.54.65,9.26h-8.09Z"/>
+<path d="M10587.72,543.69c0,1.16-.13,2.14-.39,3.82h-22.02c.58,5.25,4.53,8.35,10.1,8.35,4.01,0,7.96-1.49,10.49-4.14v6.93c-3.04,2.01-6.99,2.92-11.07,2.92-10.1,0-16.84-6.22-16.84-15.93,0-8.16,5.44-16.12,15.48-16.12,8.74,0,14.25,5.83,14.25,14.18h0ZM10573.73,535.08c-4.66,0-7.96,3.24-8.29,7.77h15.54c.32-4.4-2.59-7.77-7.25-7.77h0Z"/></g>
+      <g id="ligne2"><path d="M10441.73,575.4h33.09v6.99h-12.56v35.75h-7.96v-35.75h-12.56v-6.99h0Z"/>
+<path d="M10500.54,600.92c0,1.16-.13,2.14-.39,3.82h-22.02c.58,5.25,4.53,8.35,10.1,8.35,4.01,0,7.96-1.49,10.49-4.14v6.93c-3.04,2.01-6.99,2.92-11.07,2.92-10.1,0-16.84-6.22-16.84-15.93,0-8.16,5.44-16.12,15.48-16.12,8.74,0,14.25,5.83,14.25,14.18h0ZM10486.55,592.3c-4.66,0-7.96,3.24-8.29,7.77h15.54c.32-4.4-2.59-7.77-7.25-7.77Z"/>
+<path d="M10506.51,596.58c0-2.72-.26-5.96-.71-9.2h7.45v6.99h.65c1.23-5.05,4.86-7.45,8.68-7.45,1.42,0,3.91.57,5.2,1.29v7.32c-1.68-1.17-4.17-1.93-6.05-1.93-4.86,0-7.77,3.69-7.77,10.04v5.25c0,3.43.13,6.28.65,9.26h-8.09v-21.56h0Z"/>
+<path d="M10533.75,596.8c0-2.72-.26-5.96-.71-9.2h7.45v6.99h.65c1.23-5.05,4.86-7.45,8.68-7.45,1.42,0,3.91.57,5.2,1.29v7.32c-1.68-1.17-4.17-1.93-6.05-1.93-4.86,0-7.77,3.69-7.77,10.04v5.25c0,3.43.13,6.28.65,9.26h-8.09v-21.56h0Z"/>
+<path d="M10587.72,600.92c0,1.16-.13,2.14-.39,3.82h-22.02c.58,5.25,4.53,8.35,10.1,8.35,4.01,0,7.96-1.49,10.49-4.14v6.93c-3.04,2.01-6.99,2.92-11.07,2.92-10.1,0-16.84-6.22-16.84-15.93,0-8.16,5.44-16.12,15.48-16.12,8.74,0,14.25,5.83,14.25,14.18h0ZM10573.73,592.3c-4.66,0-7.96,3.24-8.29,7.77h15.54c.32-4.4-2.59-7.77-7.25-7.77h0Z"/>
+<path d="M10595.69,604.87v-5.83h11.87v5.83h-11.87Z"/>
+<path d="M10718.82,604.87v-5.83h11.87v5.83h-11.87Z"/>
+<path d="M10639.22,612.51c-2.2,4.21-5.89,6.28-10.49,6.28-6.93,0-13.21-5.63-13.21-16.06s6.28-15.99,13.21-15.99c4.73,0,8.42,2.07,10.55,6.28h.65v-5.63c0-3.63-.19-8.16-.65-11.98h8.1v33.48c0,3.63.26,6.67.65,9.26h-8.16v-5.63h-.65,0ZM10640.19,602.79c0-5.96-3.63-9.97-8.93-9.97s-8.29,3.69-8.29,9.91,3.11,9.97,8.29,9.97,8.93-4.08,8.93-9.91Z"/>
+<path d="M10683.08,600.92c0,1.16-.13,2.14-.39,3.82h-22.02c.58,5.25,4.53,8.35,10.1,8.35,4.01,0,7.96-1.49,10.49-4.14v6.93c-3.04,2.01-6.99,2.92-11.07,2.92-10.1,0-16.83-6.22-16.83-15.93,0-8.16,5.44-16.12,15.48-16.12,8.74,0,14.24,5.83,14.24,14.18h0ZM10669.09,592.3c-4.66,0-7.96,3.24-8.29,7.77h15.54c.32-4.4-2.59-7.77-7.25-7.77h0Z"/>
+<path d="M10698.55,605.45c-6.48-.58-10.49-3.95-10.49-9.26,0-5.7,4.53-9.45,11.33-9.45,3.36,0,6.48.91,9.26,2.72v6.86c-2.65-2.33-5.76-3.69-8.81-3.69s-4.86,1.3-4.86,3.56c0,2.14,1.68,3.36,5.37,3.69,6.54.52,10.49,3.82,10.49,9.13,0,5.83-4.73,9.78-11.72,9.78-3.95,0-7.77-1.16-10.82-3.36v-7.06c2.72,2.78,6.54,4.47,10.29,4.47,3.3,0,5.18-1.3,5.18-3.76,0-2.14-1.49-3.24-5.25-3.63h0Z"/>
+<path d="M10742.42,618.79c-2.92,0-5.83-.71-8.74-1.94v-7.12c2.33,1.62,4.66,2.33,6.99,2.33,4.34,0,6.48-2.53,6.48-6.73v-29.92h8.03v30.82c0,7.96-5.12,12.56-12.76,12.56h0Z"/>
+<path d="M10790.87,600.92c0,1.16-.13,2.14-.39,3.82h-22.02c.58,5.25,4.53,8.35,10.1,8.35,4.01,0,7.96-1.49,10.49-4.14v6.93c-3.04,2.01-6.99,2.92-11.07,2.92-10.1,0-16.83-6.22-16.83-15.93,0-8.16,5.44-16.12,15.48-16.12,8.74,0,14.24,5.83,14.24,14.18h0ZM10776.88,592.3c-4.66,0-7.96,3.24-8.29,7.77h15.54c.32-4.4-2.59-7.77-7.25-7.77h0Z"/>
+<path d="M10796.84,607.65v-11.07c0-3.24-.26-6.28-.65-9.2h8.1v18.72c0,4.21,2.33,6.54,6.22,6.54,4.4,0,7.32-3.17,7.32-7.96v-17.29h7.45v21.5c0,2.65.26,6.6.65,9.26h-7.45v-5.25h-.65c-1.49,3.37-5.18,5.89-10.04,5.89-6.48,0-10.94-4.4-10.94-11.14h0Z"/>
+<path d="M10840.1,587.38v5.25h.65c1.62-3.43,5.12-5.89,9.91-5.89,6.54,0,11.2,4.53,11.2,11.33v10.82c0,3.43.26,6.6.65,9.26h-8.1v-18.33c0-4.27-2.53-6.93-6.47-6.93-4.21,0-7.25,3.17-7.25,7.96v17.29h-7.45v-21.56c0-2.65-.32-6.34-.65-9.2h7.51,0Z"/>
+<path d="M10897.55,600.92c0,1.16-.13,2.14-.39,3.82h-22.02c.58,5.25,4.53,8.35,10.1,8.35,4.01,0,7.96-1.49,10.49-4.14v6.93c-3.04,2.01-6.99,2.92-11.07,2.92-10.1,0-16.83-6.22-16.83-15.93,0-8.16,5.44-16.12,15.48-16.12,8.74,0,14.24,5.83,14.24,14.18h0ZM10883.57,592.3c-4.66,0-7.96,3.24-8.29,7.77h15.54c.32-4.4-2.59-7.77-7.25-7.77h0Z"/>
+<path d="M10913.02,605.45c-6.48-.58-10.49-3.95-10.49-9.26,0-5.7,4.53-9.45,11.33-9.45,3.36,0,6.48.91,9.26,2.72v6.86c-2.65-2.33-5.76-3.69-8.81-3.69s-4.86,1.3-4.86,3.56c0,2.14,1.68,3.36,5.37,3.69,6.54.52,10.49,3.82,10.49,9.13,0,5.83-4.73,9.78-11.72,9.78-3.95,0-7.77-1.16-10.82-3.36v-7.06c2.72,2.78,6.54,4.47,10.29,4.47,3.3,0,5.18-1.3,5.18-3.76,0-2.14-1.49-3.24-5.25-3.63h0Z"/></g>
+    </g>
+  </g>
+</svg>
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const tronc=$('tronc'), pageG=$('pageG'), pageD=$('pageD'), feuillage=$('feuillage'),
+        pied=$('racinesPied'), racineG=$('racineG'), racineD=$('racineD'), pleines=$('racinesPleines'), logo=$('logo'), l1=$('ligne1'), l2=$('ligne2'), tout=$('tout');
+
+  // Courbes d'accélération
+  const clamp = t => Math.min(1, Math.max(0, t));
+  const outCubic = t => 1 - Math.pow(1 - t, 3);
+  const inOutCubic = t => t < .5 ? 4*t*t*t : 1 - Math.pow(-2*t + 2, 3) / 2;
+  const outBack = t => { const c1 = 1.4, c3 = c1 + 1; return 1 + c3*Math.pow(t-1,3) + c1*Math.pow(t-1,2); };
+  // progression d'une étape entre a et b (secondes)
+  const p = (t, a, b, ease) => ease(clamp((t - a) / (b - a)));
+
+  // Constantes du dessin
+  const POUSSEE = -274.36;       // décalage du logo vers la gauche (étape 8)
+  const CX = 9143.5;             // axe central du logo
+  const DUREE = 9.9;
+
+  // Version 2 : 5 combinaisons de couleurs, jouées l'une après l'autre
+  const COMBOS = [
+    { fond: '#054b3c', trait: '#ffebd7' },  // 1. vert / crème
+    { fond: '#192341', trait: '#ffaf5f' },  // 2. bleu nuit / orange
+    { fond: '#ffebd7', trait: '#192341' },  // 3. crème / bleu nuit
+    { fond: '#003caa', trait: '#ffebd7' },  // 4. bleu / crème
+    { fond: '#e65f5a', trait: '#192341' },  // 5. corail / bleu nuit
+  ];
+  const hex = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16));
+  const melange = (h1, h2, k) => {
+    const a = hex(h1), b = hex(h2);
+    return `rgb(${a.map((v, i) => Math.round(v + (b[i] - v) * k)).join(',')})`;
+  };
+  const racine = document.documentElement.style;
+  function couleurs(c, t) {
+    const actuel = COMBOS[c % 5], suivant = COMBOS[(c + 1) % 5];
+    // le logo est invisible à ce moment-là : le fond glisse vers la couleur suivante
+    const k = p(t, 9.45, 9.9, inOutCubic);
+    racine.setProperty('--fond', k > 0 ? melange(actuel.fond, suivant.fond, k) : actuel.fond);
+    racine.setProperty('--trait', actuel.trait);
+  }            // durée d'une boucle complète (s)
+
+  function rendu(t) {
+    // 1 → 4 : le tronc sort du sol
+    //   Tronc et racines forment un seul mouvement continu (une seule courbe
+    //   d'accélération), pour qu'il n'y ait aucune pause entre les deux.
+    const w = p(t, 0.5, 3.5, inOutCubic);
+    const a = clamp(w / 0.52);
+    tronc.setAttribute('transform', `translate(0 ${(1 - a) * 96})`);
+
+    // 5 : formation des racines, juste après le tronc (storyboard Fichier_1)
+    //   Un seul mouvement continu : le pied du tronc descend, puis, sans pause,
+    //   les racines s'allongent vers les deux extrémités, bouts arrondis.
+    pied.setAttribute('height', clamp((w - 0.5) / 0.1) * 31);
+    const r = clamp((w - 0.58) / 0.42);
+    for (const rac of [racineG, racineD]) {
+      rac.setAttribute('stroke-dasharray', `${r} 2`);
+      rac.style.opacity = r > 0 ? 1 : 0;
+    }
+    // le pied s'élargit au rythme des racines pour couvrir la jonction (pas d'encoches)
+    const hw = 5.3 + clamp(r / 0.12) * 7.5;
+    pied.setAttribute('x', CX - hw);
+    pied.setAttribute('width', 2 * hw);
+    pleines.setAttribute('opacity', clamp((r - 0.9) / 0.1));  // fondu doux vers la forme exacte
+
+    // 6 : pendant la formation des racines, le feuillage apparaît par un fondu rapide
+    feuillage.style.opacity = p(t, 2.4, 2.75, outCubic);
+
+    // 6 : les deux pages du livre sortent du sol, en même temps que le feuillage
+    const g = p(t, 2.4, 3.5, outCubic), d = g;
+    pageG.setAttribute('transform', `translate(0 ${(1 - g) * 105})`);
+    pageD.setAttribute('transform', `translate(0 ${(1 - d) * 105})`);
+
+    // 8 : le logo glisse à gauche, le nom apparaît
+    const m = p(t, 3.9, 5.3, inOutCubic);
+    logo.setAttribute('transform', `translate(${m * POUSSEE} 0)`);
+    const n1 = p(t, 4.65, 5.8, outCubic), n2 = p(t, 4.8, 5.95, outCubic);
+    l1.setAttribute('transform', `translate(${(1 - n1) * 60} 0)`); l1.style.opacity = n1;
+    l2.setAttribute('transform', `translate(${(1 - n2) * 60} 0)`); l2.style.opacity = n2;
+
+    // Fin de boucle : fondu, puis on recommence
+    tout.style.opacity = 1 - p(t, 8.7, 9.5, inOutCubic);
+  }
+
+  const reduit = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const params = new URLSearchParams(location.search);
+  const comboFixe = params.get('c');   // ?c=1 à 5 : affiche une seule combinaison
+  if (reduit) { couleurs((comboFixe || 1) - 1, 0); rendu(8); return; }
+
+  // ?t=7.5 dans l'URL fige l'animation à un instant (pratique pour vérifier)
+  // ?t=7.5 fige l'animation à un instant (avec ?c=2 pour choisir la couleur)
+  const fige = params.get('t');
+  if (fige !== null) { const tf = parseFloat(fige); couleurs((comboFixe || 1) - 1, tf); rendu(tf); return; }
+
+  let debut = null;
+  function boucle(ms) {
+    if (debut === null) debut = ms;
+    const e = (ms - debut) / 1000;
+    const t = e % DUREE;
+    const c = comboFixe ? comboFixe - 1 : Math.floor(e / DUREE) % 5;
+    couleurs(c, comboFixe ? 0 : t);
+    rendu(t);
+    requestAnimationFrame(boucle);
+  }
+  couleurs(comboFixe ? comboFixe - 1 : 0, 0);
+  rendu(0);
+  requestAnimationFrame(boucle);
+})();
+</script>
+</body>
+</html>
